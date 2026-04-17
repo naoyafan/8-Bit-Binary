@@ -82,16 +82,16 @@ public class Bit
         int sum = value + b.getValue() + c.getValue();
         int carryVal = 0;
         if (sum == 3) {
-            value = 1;
+            value = 1; //11
             carryVal = 1;
         } else if (sum == 2) {
-            value = 0;
+            value = 0; //10
             carryVal = 1;
         } else if (sum == 1) {
-            value = 1;
+            value = 1; //01
             carryVal = 0;
         } else {
-            value = 0; 
+            value = 0; //00
             carryVal = 0;
         }
         return new Bit(carryVal);
