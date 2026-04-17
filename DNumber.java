@@ -51,4 +51,36 @@ public class DNumber
         }
         return result;
     }
+    
+    public void add(DNumber d) {
+        Bit carry = new Bit (0); //starts @ zero
+        
+        for (int i = SIZE - 1; i >= 0; i--) { //go from 7-0 again (right to left)
+            carry = bits[i].add(d.bits[i], carry); //add current, Dnumber, and carry bits together
+        }
+        
+        
+        if (carry.getValue() == 1) {
+            System.out.println("Error: overflow"); //after adding and its still has a carry
+        }
+    }
+    
+    /**
+     * Converts current binary to a decimal number
+     * each bit is multiplied by whatever power of two corresponds
+     * @return Decimal int of the binary number
+     */
+    public int toDecimal() {
+        int total = 0;
+        int currentP2 = 128; //start @ 2^7
+        
+        for (int i = 0; i < SIZE; i++) {
+            if (bits[i].getValue() == 1) {
+                total = total + currentP2; //makes sure computer saves answer from currentP2 and old total
+            }
+            currentP2 = currentP2 / 2; //goes to next power of 2
+        }
+        return total;
+    }
+        
 }
