@@ -48,6 +48,28 @@ public class Bit
     }
     
     /**
+     * Add another bit to this bit
+     * @param b Bit thats added
+     * @return New Bit that is the carry
+     */
+    public Bit add(Bit b) {
+        int sum = value + b.getValue();
+        int carryVal = 0;
+        
+        if (sum == 2) {
+            value = 0;
+            carryVal = 1;
+        } else if (sum == 1) {
+            value = 1;
+            carryVal = 0;
+        } else {
+            value = 0;
+            carryVal = 0;
+        }
+        return new Bit(carryVal);
+    }
+    
+    /**
      * adds b and c to this bit and returns the carry 
      * @param b First bit added
      * @param c Second bit added
