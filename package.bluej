@@ -2,10 +2,10 @@
 dependency1.from=DNumber
 dependency1.to=Bit
 dependency1.type=UsesDependency
-editor.fx.0.height=728
-editor.fx.0.width=800
-editor.fx.0.x=-25
-editor.fx.0.y=102
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 objectbench.height=79
 objectbench.width=776
 package.divider.horizontal=0.6

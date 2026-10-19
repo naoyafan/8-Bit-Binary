@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=DNumber
+comment0.text=\n\ Write\ a\ description\ of\ class\ DNumber\ here.\n\ class\ that\ represents\ a\ number\ by\ storing\ the\ bits\ equivalent\ to\ that\ number\n\ converts\ between\ hex,\ decimals,\ and\ binary\n\ @author\ (Sterling\ D.\ Fields)\n\ @version\ (4/10/2026)\n
+comment1.params=
+comment1.target=DNumber()
+comment1.text=\n\ Constructor\ w/no\ parameters\ that\ sets\ everything\ to\ 0\n\ makes\ an\ ArrayList\ and\ fill\ it\ in\ with\ 8\ bits\n
+comment2.params=val
+comment2.target=DNumber(int)
+comment2.text=\n\ Constructor\ converting\ int\ to\ binary\ bits\ going\ by\ powers\ of\ 2\ to\ see\ if\ bit\ is\ 0\ or\ 1\n\ @param\ val\ integer\ to\ convert\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\n\ @return\ String\ of\ 1s\ and\ 0s\n
+comment4.params=d
+comment4.target=void\ add(DNumber)
+comment4.text=\n\ adds\ another\ object\ doing\ the\ binary\ add\n\ @param\ d\ The\ other\ object\ we're\ adding\ to\ this\ one\n
+comment5.params=
+comment5.target=int\ toDecimal()
+comment5.text=\n\ Converts\ current\ binary\ to\ a\ decimal\ number\n\ each\ bit\ is\ multiplied\ by\ whatever\ power\ of\ two\ corresponds\n\ @return\ Decimal\ int\ of\ the\ binary\ number\n
+comment6.params=value
+comment6.target=java.lang.String\ hexLett(int)
+comment6.text=\n\ turns\ numbers\ into\ hex\ letters\n\ @param\ value\ Number\ that\ will\ turn\ into\ a\ letter\n\ @return\ Strinf\ with\ hex\ characters\n
+comment7.params=
+comment7.target=java.lang.String\ toHex()
+comment7.text=\n\ changes\ from\ binary\ to\ a\ two\ digit\ hexadecimal\ string\n\ @return\ Hex\ string\ \n
+numComments=8
