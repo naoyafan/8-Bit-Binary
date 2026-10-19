@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Bit
+comment0.text=\n\ Write\ a\ description\ of\ class\ Bit\ here.\n\ Only\ 0\ or\ 1\ is\ stored\n\ @author\ (Sterling\ D.\ Fields)\n\ @version\ (4/4/2026)\n
+comment1.params=val
+comment1.target=Bit(int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Bit\n\ If\ the\ input\ isn't\ 0\ or\ 1,\ automaticaly\ is\ 0\n\ @param\ val\ Starting\ value\ for\ the\ bit\n
+comment2.params=
+comment2.target=int\ getValue()
+comment2.text=\n\ @return\ bit\ value\ as\ an\ int\n
+comment3.params=val
+comment3.target=void\ setValue(int)
+comment3.text=\n\ If\ parameter\ isn't\ 0\ or\ 1,\ bit\ keeps\ old\ value\n\ @param\ val\ New\ value\ for\ bit\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ @return\ 0\ or\ 1\ as\ a\ String\ ("")\n
+comment5.params=b
+comment5.target=Bit\ add(Bit)
+comment5.text=\n\ Add\ another\ bit\ to\ this\ bit\n\ @param\ b\ Bit\ thats\ added\n\ @return\ New\ Bit\ that\ is\ the\ carry\n
+comment6.params=b\ c
+comment6.target=Bit\ add(Bit,\ Bit)
+comment6.text=\n\ adds\ b\ and\ c\ to\ this\ bit\ and\ returns\ the\ carry\ \n\ @param\ b\ First\ bit\ added\n\ @param\ c\ Second\ bit\ added\n\ @return\ New\ bit\ that\ represents\ the\ carry(0\ or\ 1)\n
+numComments=7
